@@ -1,0 +1,25 @@
+﻿@using System.IO;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<div class="row">
+<div class="col-md-10">
+   @using (Html.BeginForm("Index", "Drop", FormMethod.Post,new { @enctype="multipart/form-data"}))
+   {
+       <input type="file" name="file"/>
+       <br />
+       <br />
+       <input type="submit" value="save"/>
+   }  
+</div>
+
+    <div>
+        <a href="/Drop/Download"> Click here to Download</a>
+        </div>
+
+  
+
+</div>

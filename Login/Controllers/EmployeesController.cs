@@ -129,5 +129,10 @@ namespace Login.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Drop()
+        {
+            return View();
+        }
     }
 }
